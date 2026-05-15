@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://yebmvjiatm1o"]
+
+[ext_resource type="Script" uid="uid://0gohijgwaekj" path="res://Escenas/Base/base.gd" id="1_fb7gt"]
+[ext_resource type="Texture2D" uid="uid://bacy4n0hpnl1x" path="res://Sprites/Torre/Pixel torres.png" id="2_ml4ul"]
+
+[node name="Base" type="Area2D" unique_id=1723535937 groups=["base"]]
+script = ExtResource("1_fb7gt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1683971790]
+texture = ExtResource("2_ml4ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=616727097]

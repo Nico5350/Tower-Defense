@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ck05dlvlc7mcl"]
+
+[ext_resource type="Script" uid="uid://jcwx3gydh78p" path="res://Escenas/Enemigos/enemigo_1.gd" id="1_rkqgo"]
+
+[node name="Enemigo1" type="CharacterBody2D" unique_id=879410643]
+script = ExtResource("1_rkqgo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=705997227]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1484111445]
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=817935505]
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=27233775]
+polygon = PackedVector2Array(-17, -14, 0, -13, 2, 2, -18, 2)
+uv = PackedVector2Array(-64.5, -45, 41.5, -44, 40.5, 9, -67.5, 8)
