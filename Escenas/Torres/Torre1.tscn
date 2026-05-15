@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dttnqd6sq6rti"]
+
+[ext_resource type="Script" uid="uid://d1xm07btjrenr" path="res://Escenas/Torres/torre_1.gd" id="1_1r2js"]
+[ext_resource type="Script" uid="uid://c1p7wsbbnaelw" path="res://Escenas/Torres/rango_visual.gd" id="2_o7ky2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_icng7"]
+radius = 80.0
+
+[node name="Torre1" type="Node2D" unique_id=1686454193]
+script = ExtResource("1_1r2js")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2023304009]
+custom_minimum_size = Vector2(14, 14)
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 41.0
+offset_bottom = 41.0
+color = Color(0, 0, 1, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1818969638]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=742793435]
+shape = SubResource("CircleShape2D_icng7")
+
+[node name="Timer" type="Timer" parent="." unique_id=319141511]
+one_shot = true
+autostart = true
+
+[node name="RangoVisual" type="Node2D" parent="." unique_id=1767905173]
+script = ExtResource("2_o7ky2")
