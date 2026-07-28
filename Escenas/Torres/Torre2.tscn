@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cmkm36nofq8yl"]
+
+[ext_resource type="Script" uid="uid://d1xm07btjrenr" path="res://Escenas/Torres/torre.gd" id="1_fkyxb"]
+[ext_resource type="Script" uid="uid://c1p7wsbbnaelw" path="res://Escenas/Torres/rango_visual.gd" id="2_ldoaf"]
+[ext_resource type="PackedScene" uid="uid://2hs4dir5tfp8" path="res://Escenas/Proyectiles/ProyectilTorre2.tscn" id="2_wagi1"]
+[ext_resource type="Texture2D" uid="uid://b57qrog0u2nxy" path="res://Sprites/Torre/Torre 2.png.png" id="3_fkyxb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_icng7"]
+radius = 80.0
+
+[node name="Torre1" type="Node2D" unique_id=1686454193]
+script = ExtResource("1_fkyxb")
+radio = 120.0
+proyectil_scene = ExtResource("2_wagi1")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1818969638]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=742793435]
+shape = SubResource("CircleShape2D_icng7")
+
+[node name="Timer" type="Timer" parent="." unique_id=319141511]
+
+[node name="RangoVisual" type="Node2D" parent="." unique_id=1767905173]
+script = ExtResource("2_ldoaf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=353526513]
+texture = ExtResource("3_fkyxb")

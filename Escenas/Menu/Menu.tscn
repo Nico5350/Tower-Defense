@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://fw5g2lea106h"]
+
+[ext_resource type="Script" uid="uid://6rwjwctuqd6v" path="res://Escenas/Menu/menuPrincipal.gd" id="1_crth0"]
+
+[node name="MenuPrincipal" type="Control" unique_id=1888571208]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_crth0")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=778551235]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1526479440]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1496544228]
+layout_mode = 2
+text = "Tower Defense
+"
+
+[node name="Jugar" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1077232760]
+layout_mode = 2
+text = "Jugar
+"
+
+[node name="Salir" type="Button" parent="CenterContainer/VBoxContainer" unique_id=641399916]
+layout_mode = 2
+text = "Salir"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Salir" to="." method="_on_salir_pressed"]

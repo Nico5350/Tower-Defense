@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dg3wo1bplbfk4"]
+
+[ext_resource type="Script" uid="uid://8qdwyj1jm44y" path="res://Escenas/UI/game_over.gd" id="1_cppli"]
+
+[node name="GameOver" type="Node2D" unique_id=1976248460]
+process_mode = 3
+script = ExtResource("1_cppli")
+
+[node name="Control" type="Control" parent="." unique_id=403646508]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1843526267]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.003921569)
+
+[node name="CenterContainer" type="VBoxContainer" parent="Control" unique_id=1514681125]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 1268.5
+offset_bottom = 708.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LabelGameover" type="Label" parent="Control/CenterContainer" unique_id=807087060]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "¡GAME OVER!"
+
+[node name="MenuPrincipal" type="Button" parent="Control/CenterContainer" unique_id=1938061635]
+layout_mode = 2
+text = "Menu Principal
+"
+
+[node name="Button" type="Button" parent="Control/CenterContainer" unique_id=800543129]
+layout_mode = 2
+text = "Reiniciar
+"
+
+[connection signal="pressed" from="Control/CenterContainer/MenuPrincipal" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Control/CenterContainer/Button" to="." method="_on_button_pressed"]

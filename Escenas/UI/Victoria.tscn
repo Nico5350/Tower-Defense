@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dj6g61e8ogrqn"]
+
+[ext_resource type="Script" uid="uid://soghblcequv" path="res://Escenas/UI/victoria.gd" id="1_06tp8"]
+
+[node name="Victoria" type="Node2D" unique_id=197191636]
+process_mode = 3
+script = ExtResource("1_06tp8")
+
+[node name="Control" type="Control" parent="." unique_id=1493640710]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 650.0
+offset_top = 321.0
+offset_right = 650.0
+offset_bottom = 321.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=780189406]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="VBoxContainer" parent="Control" unique_id=1815953553]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LabelVictoria" type="Label" parent="Control/CenterContainer" unique_id=1058677387]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7851073, 0.6258451, 0, 1)
+text = "¡VICTORIA!"
+
+[node name="Button" type="Button" parent="Control/CenterContainer" unique_id=448044120]
+layout_mode = 2
+text = "Reiniciar
+"
+
+[connection signal="pressed" from="Control/CenterContainer/Button" to="." method="_on_button_pressed"]

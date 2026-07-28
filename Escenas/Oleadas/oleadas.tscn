@@ -1,3 +1,185 @@
 [gd_scene format=3 uid="uid://b6cvqr6ebd5pf"]
 
-[node name="Oleadas" type="Node2D" unique_id=1932802800]
+[ext_resource type="Script" uid="uid://du8w41isx4kh6" path="res://Escenas/Oleadas/oleadas.gd" id="1_5prhq"]
+[ext_resource type="Script" uid="uid://b5vtm4rpw1pvl" path="res://Resource/oleada_data.gd" id="2_w5hbc"]
+[ext_resource type="Script" uid="uid://870gd104ma4q" path="res://Resource/grupo_enemigo.gd" id="3_75srr"]
+
+[sub_resource type="Resource" id="Resource_w5hbc"]
+script = ExtResource("3_75srr")
+cantidad = 3
+velocidad = 60.0
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_wv4jn"]
+script = ExtResource("2_w5hbc")
+intervalo = 2.0
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_w5hbc")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_75srr"]
+script = ExtResource("3_75srr")
+cantidad = 6
+velocidad = 70.0
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_lryys"]
+script = ExtResource("2_w5hbc")
+intervalo = 1.7
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_75srr")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_agd3a"]
+script = ExtResource("3_75srr")
+cantidad = 9
+vida = 4
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_bpate"]
+script = ExtResource("2_w5hbc")
+intervalo = 1.5
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_agd3a")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_wr6k4"]
+script = ExtResource("3_75srr")
+cantidad = 10
+velocidad = 90.0
+vida = 4
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_4kgyt"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+cantidad = 2
+velocidad = 160.0
+vida = 2
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_wagh5"]
+script = ExtResource("2_w5hbc")
+intervalo = 1.3
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_wr6k4"), SubResource("Resource_4kgyt")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_iip0m"]
+script = ExtResource("3_75srr")
+cantidad = 12
+velocidad = 90.0
+vida = 5
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_rr50b"]
+script = ExtResource("3_75srr")
+cantidad = 3
+velocidad = 160.0
+vida = 2
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_elsl8"]
+script = ExtResource("2_w5hbc")
+intervalo = 1.2
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_iip0m"), SubResource("Resource_rr50b")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_ascnp"]
+script = ExtResource("3_75srr")
+cantidad = 10
+velocidad = 90.0
+vida = 5
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_gehu7"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+cantidad = 3
+velocidad = 160.0
+vida = 2
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_adv3g"]
+script = ExtResource("2_w5hbc")
+intervalo = 1.1
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_ascnp"), SubResource("Resource_gehu7")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_2nr2o"]
+script = ExtResource("3_75srr")
+cantidad = 12
+velocidad = 90.0
+vida = 5
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_v0l35"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+velocidad = 160.0
+vida = 2
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_g1g6m"]
+script = ExtResource("2_w5hbc")
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_2nr2o"), SubResource("Resource_v0l35")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_oiwq6"]
+script = ExtResource("3_75srr")
+cantidad = 12
+velocidad = 90.0
+vida = 5
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_5a2ck"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+velocidad = 160.0
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_1ywse"]
+script = ExtResource("2_w5hbc")
+intervalo = 0.95
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_oiwq6"), SubResource("Resource_5a2ck")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_ngkjp"]
+script = ExtResource("3_75srr")
+cantidad = 15
+velocidad = 90.0
+vida = 5
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_b48cc"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+cantidad = 8
+velocidad = 160.0
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_2m38d"]
+script = ExtResource("2_w5hbc")
+intervalo = 0.95
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_ngkjp"), SubResource("Resource_b48cc")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[sub_resource type="Resource" id="Resource_yhqd0"]
+script = ExtResource("3_75srr")
+cantidad = 15
+velocidad = 90.0
+vida = 6
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_jam48"]
+script = ExtResource("3_75srr")
+tipo = "tipo2"
+cantidad = 10
+velocidad = 160.0
+metadata/_custom_type_script = "uid://870gd104ma4q"
+
+[sub_resource type="Resource" id="Resource_06pb6"]
+script = ExtResource("2_w5hbc")
+intervalo = 0.9
+grupos = Array[ExtResource("3_75srr")]([SubResource("Resource_yhqd0"), SubResource("Resource_jam48")])
+metadata/_custom_type_script = "uid://b5vtm4rpw1pvl"
+
+[node name="Oleadas" type="Node" unique_id=1159184788]
+script = ExtResource("1_5prhq")
+lista_oleadas = Array[ExtResource("2_w5hbc")]([SubResource("Resource_wv4jn"), SubResource("Resource_lryys"), SubResource("Resource_bpate"), SubResource("Resource_wagh5"), SubResource("Resource_elsl8"), SubResource("Resource_adv3g"), SubResource("Resource_g1g6m"), SubResource("Resource_1ywse"), SubResource("Resource_2m38d"), SubResource("Resource_06pb6")])

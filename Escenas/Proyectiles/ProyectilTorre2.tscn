@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://2hs4dir5tfp8"]
+
+[ext_resource type="Script" uid="uid://fn20q51mq2dw" path="res://Escenas/Proyectiles/proyectil_torre_1.gd" id="1_wfwss"]
+[ext_resource type="Texture2D" uid="uid://cg3rtdmj3aclv" path="res://Sprites/Proyectiles/Piedra 1.png" id="2_wfwss"]
+
+[node name="Proyectil1" type="Area2D" unique_id=576048635]
+script = ExtResource("1_wfwss")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1414454860]
+texture = ExtResource("2_wfwss")

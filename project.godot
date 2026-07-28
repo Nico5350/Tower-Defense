@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Tower Defense"
-run/main_scene="uid://b5uin66pmriy8"
+run/main_scene="uid://fw5g2lea106h"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [physics]
 

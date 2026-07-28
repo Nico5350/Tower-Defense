@@ -1,12 +1,29 @@
 [gd_scene format=3 uid="uid://yebmvjiatm1o"]
 
 [ext_resource type="Script" uid="uid://0gohijgwaekj" path="res://Escenas/Base/base.gd" id="1_fb7gt"]
-[ext_resource type="Texture2D" uid="uid://bacy4n0hpnl1x" path="res://Sprites/Torre/Pixel torres.png" id="2_ml4ul"]
+[ext_resource type="Texture2D" uid="uid://d4cyevamv343a" path="res://Sprites/Torre/Fortaleza2.0.png" id="2_fb7gt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fb7gt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fb7gt"]
+bg_color = Color(0, 1, 0, 1)
 
 [node name="Base" type="Area2D" unique_id=1723535937 groups=["base"]]
 script = ExtResource("1_fb7gt")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1683971790]
-texture = ExtResource("2_ml4ul")
+texture = ExtResource("2_fb7gt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=616727097]
+shape = SubResource("RectangleShape2D_fb7gt")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=711204193]
+custom_minimum_size = Vector2(40, 5)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_right = 40.0
+offset_bottom = 5.0
+grow_horizontal = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_fb7gt")
+show_percentage = false

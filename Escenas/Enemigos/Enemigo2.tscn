@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://ck05dlvlc7mcl"]
+[gd_scene format=3 uid="uid://cci21v2ewbhip"]
 
-[ext_resource type="Script" uid="uid://jcwx3gydh78p" path="res://Escenas/Enemigos/enemigo_1.gd" id="1_rkqgo"]
-[ext_resource type="Texture2D" uid="uid://cf0qprpvc5lhg" path="res://Sprites/Enemigos/dron.png~.png" id="2_up1vm"]
+[ext_resource type="Script" uid="uid://jcwx3gydh78p" path="res://Escenas/Enemigos/enemigo_1.gd" id="1_e61y8"]
+[ext_resource type="Texture2D" uid="uid://cqn7orb3o4svy" path="res://Sprites/Enemigos/Enemigo.velocista.png" id="2_e61y8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkqgo"]
 size = Vector2(14, 14)
@@ -10,11 +10,12 @@ size = Vector2(14, 14)
 bg_color = Color(0, 1, 0, 1)
 
 [node name="Enemigo1" type="CharacterBody2D" unique_id=879410643 groups=["enemigos"]]
-script = ExtResource("1_rkqgo")
-vida = 5
+script = ExtResource("1_e61y8")
+velocidad = 100.0
+vida = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=705997227]
-texture = ExtResource("2_up1vm")
+texture = ExtResource("2_e61y8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1484111445]
 shape = SubResource("RectangleShape2D_rkqgo")
